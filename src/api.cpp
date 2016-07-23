@@ -14,6 +14,81 @@
 /**
  * @brief %game related functions and classes
  */
+ namespace Callback {
+    public:
+        /**
+         * Binds a new callback.
+         *
+         * @param string    callback name
+         *
+         * @param object    Params.
+         *
+         * Example: Callback.Bind("GameStart", function() print("Game has started!") end)
+         **/
+        function void Bind(string arg, object arg) {}
+
+        /**
+         * Unbinds a callback
+         *
+         * @param string  Set which callback should be unbinded.
+         *
+         * @param object         Params.
+         **/
+        function int Unbind(string arg, object arg) {}
+
+        /**
+         * Gets callbacks.
+         *
+         **/
+        function object GetCallbacks(string arg) {}
+
+        /**
+         * Triggers a callback list.
+         *
+         **/
+        function void Trigger(string arg, object arg) {}
+
+        /**
+         * Prioritizes the bind of .string.
+         *
+         **/
+        function void PriorityBind(string arg, object arg) {}
+
+        
+        /*! Callback enums. */
+        enum {
+            Animation, /*!< triggered when the unit does an animation */
+            ApplyBuff, /*!< triggered when a buff is applied to the unit */
+            ApplyParticle, /*!< triggered when a particle is applied to unit */
+            Bugsplat, /*!< triggered when user bugsplats */
+            CastSpell, /*!< triggered when unit casts a spell */
+            CreateObj, /*!< triggered when an object is created */
+            DeleteObj, /*!< triggered when an object is deleted */
+            Draw, /*!< triggered every FRAME */
+            Exit, /*!< triggered on exit */
+            GameStart, /*!< triggered when the game starts */
+            GameTick, /*!< different to Tick */
+            IssueOrder, /*!< triggered on IssueOrder */
+            Load, /*!< triggered when cloudrop injects // not when the game begins */
+            NewPath, /*!< triggered when unit makes a new path */
+            Notify, /*!< triggered on a new event */
+            ProcessAttack, /*!< triggered when an attack is being made */
+            ProcessSpell, /*!< triggered when a spell is being cast */
+            RecvChat, /*!< triggered when receiving a message in chat */
+            RecvPacket, /*!< triggered when receiving a packet */
+            RemoveBuff, /*!< triggered when a buff is removed from unit */
+            Reset, /*!< triggered every draw reset */
+            SendChat, /*!< triggered when sending a message in chat */
+            SendPacket, /*!< triggered when sending a packet */
+            Tick, /*!< triggered every TICK */
+            UnLoad, /*!< triggered when user unloads cloudrop */
+            UpdateBuff, /*!< triggered when unit's buff is updated */
+            UpdateObj, /*!< triggered on object update */
+            WndMsg, /*!< triggered when a key is/has been pressed */
+
+        };
+}
+ 
 namespace Game {
     public:
         /**

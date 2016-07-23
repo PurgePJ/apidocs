@@ -104,6 +104,45 @@ namespace Game {
          * @param enabled  flag indicating if the input should be allowed or not
          */
         function AllowCameraInput(bool enabled) {}
+        
+        /**
+         * Blocks the order.
+         */
+        function void BlockOrder() {}
+
+        /**
+         * Blocks the spell.
+         */
+        function void BlockSpell() {}
+
+        /**
+         * Buys the item with the id set.
+         *
+         * @param id     example: 3053
+         *
+         * code example     myHero:BuyItem(3053)
+         */
+        function void BuyItem(string id) {}
+
+        /**
+         * Does an emote.
+         */
+        function void DoEmote(unsigned long arg1) {}
+
+        /**
+         * Enables/disables AntiAFK function.
+         */
+        function void EnableAntiAFK(bool arg1) {}
+
+        /**
+         * Returns Game Region as a string
+         */
+        function string GetGameRegion() {}
+
+        /**
+         * Returns Game Version as a string
+         */
+        function string GetGameVersion() {}
 }
 
 /**

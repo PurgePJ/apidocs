@@ -241,3 +241,130 @@ namespace Window {
             function void SetText(string arg) {}
         }
 }
+
+namespace MenuConfig {
+    public:
+        /**
+         * Creates a Boolean-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         * @param  DefVal       default value - true/false [optional]
+         * @param  callback       callback function [optional]
+         * @param  ForceDefault       Force default value - true/false [optional]
+         */
+        function Boolean(object id, object text, object DefVal, function callback, object ForceDefault) {}
+
+        /**
+         * Creates a Button-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         * @param  callback       Force callback function [optional]
+         */
+        function Button(object id, object text, function callback) {}
+
+        /**
+         * Creates a ColorPick-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         * @param  DefVal       default value - true/false [optional]
+         * @param  callback       callback function [optional]
+         * @param  ForceDefault       Force default value - true/false [optional]
+         */
+        function ColorPick(object id, object text, object DefVal, function callback, object ForceDefault) {}
+
+        /**
+         * Creates a DropDown-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         * @param  DefVal       default value - boolean
+         * @param  arguments       table containing DropDown options.
+         * @param  callback       callback function [optional]
+         * @param  ForceDefault       Force default value - true/false [optional]
+         */
+        function DropDown(object id, object text, object DefVal, table arguments = {}, function callback, object ForceDefault) {}
+
+        /**
+         * Creates an Info-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         */
+        function Info(object id, object text) {}
+
+        /**
+         * Creates a KeyBinding-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         * @param  Key       key string
+         * @param  callback       callback function [optional]
+         * @param  ForceDefault       Force default value - true/false [optional]
+         */
+        function KeyBinding(object id, object text, object Key, function callback, object ForceDefault) {}
+
+        /**
+         * Creates a Sub-Menu in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         */
+        function Menu(object id, object text) {}
+
+        /**
+         * Creates a Number-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         * @param  DefVal       default value - boolean
+         * @param  MinValue       Minimum Value. [optional]
+         * @param  MaxValue       Maximum Value. [optional]
+         * @param  callback       callback function [optional]
+         * @param  ForceDefault       Force default value - true/false [optional]
+         */
+        function Number(object id, object text, object DefVal, int MinValue, int MaxValue, function callback, object ForceDefault) {}
+
+        /**
+         * Creates a Section-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         */
+        function Section(object id, object text) {}
+
+        /**
+         * Creates a Separator-Field in your Menu.
+         *
+         */
+        function Separator() {}
+
+        /**
+         * Creates a Slider-Field in your Menu.
+         *
+         * @param  id       id of menu
+         * @param  text       text to display in menu
+         * @param  DefVal       default value - boolean
+         * @param  MinValue       Minimum Value. 
+         * @param  MaxValue       Maximum Value. 
+         * @param  step         slider step (1, 10 , 3, 0.3) [optional]
+         * @param  callback       callback function [optional]
+         * @param  ForceDefault       Force default value - true/false [optional]
+         */
+        function Slider(object id, object text, object DefVal, int MinValue, int MaxValue, int step, function callback, object ForceDefault) {}
+
+        /**
+         * Creates a TargetSelector-Field in your Menu.
+         *
+         * @param  id       Id of menu
+         * @param  text       Text to display in menu
+         * @param  Mode       TS (Target Selector) Mode [optional]
+         * @param  range       Range for TS [optional]
+         * @param  DmgType       TS Damage Type [optional]
+         * @param  FocusSelected       Stands a boolean value [optional]
+         * @param  OwnTeam       Boolean for team checking. [optional]
+         */
+        function TargetSelector(object id, object text, int Mode, int range, string DmgType, bool FocusSelected, bool OwnTeam) {}
+}

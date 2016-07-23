@@ -199,3 +199,45 @@ namespace Utility {
                 void function clear() {}
         }
 }
+
+/**
+ * @brief functions related with your window / pc.
+ */
+namespace Window {
+    public:
+        /**
+         * Returns cursos current position as a 2D Vector.
+         *
+         * Example      print(Window.GetCursorPos()) -> Should print something like this (507, 330).
+         **/
+        function Vector2 GetCursorPos() {}
+
+        /**
+         * Returns window current position as a 2D Vector.
+         *
+         * Example      print(Window.GetWindowPos()) -> Should print something like this (0, 0).
+         **/
+        function Vector2 GetWindowPos() {}
+
+        /**
+         * Returns window size as a 2D Vector. ()
+         *
+         * Example      print(Window.GetWindowSize()) -> Should print window resolution.
+         **/
+        function Vector2 GetWindowSize() {}
+    
+        class Clipboard {
+            public:
+            /**
+             * Returns the text you have in your clipboard.
+             **/
+            function GetText() {}
+
+            /**
+             * Returns the text you have in your clipboard.
+             *
+             * @param string    text to set in the clipboard.
+             **/
+            function void SetText(string arg) {}
+        }
+}

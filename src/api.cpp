@@ -389,3 +389,137 @@ namespace MenuConfig {
          */
         function TargetSelector(object id, object text, int Mode, int range, string DmgType, bool FocusSelected, bool OwnTeam) {}
 }
+
+namespace Keyboard {
+    public:
+        /**
+         * Checks if Key WAS pressed.
+         *
+         * @param  id       KeyCode/Name/string
+         */
+        function IsKeyDown(int id) {}
+
+        /**
+         * Checks if Key IS pressed.
+         *
+         * @param  id       KeyCode/Name/string
+         */
+        function IsKeyPressed(int id) {}
+
+        /**
+         * Checks if Keys WERE pressed.
+         *
+         * @param  id       KeyCode/Name/string
+         */
+        function KeysDown(object id) {}
+
+        /**
+         * Return key code of string
+         *
+         * @param  id       KeyCode/Name/string
+         */
+        function StringToKeyCodes(int id) {}
+
+        /**
+         * Return Ascii with the given string
+         *
+         * @param  id       KeyCode/Name/string
+         */
+        function ToAscii(int id) {}
+
+        /*! KeyCode enums. */
+        enum KeyCode {
+            numbers1To9,
+            A,
+            ADD,
+            ALT,
+            B,
+            BACKSPACE,
+            BACK_SLASH,
+            BROWSER_BACK,
+            BROWSER_FORWARD,
+            C,
+            CAPS_LOCK,
+            CLOSE_BRACKET,
+            COMMA,
+            CTRL,
+            D,
+            DASH,
+            DECIMAL_POINT,
+            DELETE,
+            DIVIDE,
+            DOWN_ARROW,
+            E,
+            END,
+            ENTERM,
+            EQUAL,
+            ESCAPE,
+            F,
+            F1,
+            F10,
+            F11,
+            F12,
+            F2,
+            F3,
+            F4,
+            F5,
+            F6,
+            F7,
+            F8,
+            F9,
+            FORWARD_SLASH,
+            G,
+            GRAVE_ACCENT,
+            H,
+            HOME,
+            I,
+            INSERT,
+            J,
+            K,
+            L,
+            LEFT_ARROW,
+            LEFT_WINDOWS,
+            M,
+            MENU,
+            MULTIPLY,
+            N,
+            NUMPAD_0,
+            NUMPAD_1,
+            NUMPAD_2,
+            NUMPAD_3,
+            NUMPAD_4,
+            NUMPAD_5,
+            NUMPAD_6,
+            NUMPAD_7,
+            NUMPAD_8,
+            NUMPAD_9,
+            NUM_LOCK,
+            O,
+            OPEN_BRACKET,
+            P,
+            PAGE_DOWN,
+            PAGE_UP,
+            PAUSE,
+            PERIOD,
+            Q,
+            R,
+            RIGHT_ARROW,
+            RIGHT_WINDOWS,
+            S,
+            SCROLL_LOCK,
+            SEMICOLON,
+            SHIFT,
+            SINGLE_QUOTE,
+            SPACE,
+            SUBTRACT,
+            T,
+            TAB,
+            U,
+            UP_ARROW,
+            V,
+            W,
+            X,
+            Y,
+            Z,
+        }
+}

@@ -143,6 +143,32 @@ namespace Game {
          * Returns Game Version as a string
          */
         function string GetGameVersion() {}
+        
+        class Chat {
+            public:
+                /**
+                 * Blocks the chat
+                 */
+                function Block() {}
+
+                /**
+                 * Print a message in chat
+                 *
+                 * @param arg   string
+                 *
+                 * Prints arg in chat
+                 */
+                function Print(string arg) {}
+
+                /**
+                 * Sends a message to the chat
+                 *
+                 * @param arg   string
+                 *
+                 * Sends arg in chat
+                 */
+                function Send(string arg) {}
+        }
 }
 
 /**

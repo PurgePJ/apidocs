@@ -12,7 +12,7 @@
  */
 
 /**
- * @brief %game related functions and classes
+ * @brief %Game Callbacks.
  */
  namespace Callback {
     public:

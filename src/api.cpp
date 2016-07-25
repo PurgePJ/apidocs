@@ -581,3 +581,13 @@ namespace Core {
                 function vector2 SetPos(unsigned int arg1, unsigned int arg2) {}
         }
 }
+
+namespace Documentation {
+    public:
+        /**
+         * Generates the documentation of the API set
+         *
+         * @param arg   API to generate doc from. Example -> print(Documentation.Generate(Game)) -- Will print everything related to Game namespace.
+         **/
+        function Generate(object arg) {}
+}

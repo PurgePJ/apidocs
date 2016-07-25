@@ -582,6 +582,9 @@ namespace Core {
         }
 }
 
+/**
+ * @brief Documentation function.
+ */
 namespace Documentation {
     public:
         /**

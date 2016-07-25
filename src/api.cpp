@@ -523,3 +523,61 @@ namespace Keyboard {
             Z,
         }
 }
+
+/**
+ * @brief Core functions.
+ */
+namespace Core {
+    public:
+        /**
+         * Returns Build date as a string. Example: Jun 30 2016
+         **/
+        function GetBuildDate() {}
+
+        /**
+         * Returns Old Username as a string.
+         **/
+        function GetOldUserName() {}
+
+        /**
+         * Returns Tick count.
+         **/
+        function GetTickCount() {}
+
+        /**
+         * Returns User.
+         **/
+        function GetUser() {}
+
+        /**
+         * Returns User Id.
+         **/
+        function GetUserId() {}
+
+        class Console {
+            public:
+                /**
+                 * Returns Console Pos (2dVector).
+                 **/
+                function vector2 GetPos() {}
+
+                /**
+                 * Hides console.
+                 **/
+                function Hide() {}
+
+                /**
+                 * Shows console.
+                 **/
+                function Show() {}
+
+                /**
+                 * Hides console.
+                 *
+                 * @param arg1  x pos.
+                 *
+                 * @param arg2  y pos.
+                 **/
+                function vector2 SetPos(unsigned int arg1, unsigned int arg2) {}
+        }
+}

@@ -1,3 +1,4 @@
+/*! \file */ 
 /** \mainpage My Personal Index Page
  *
  * \section intro_sec Introduction
@@ -390,6 +391,9 @@ namespace MenuConfig {
         function TargetSelector(object id, object text, int Mode, int range, string DmgType, bool FocusSelected, bool OwnTeam) {}
 }
 
+/**
+ * @brief Keyboard related functions.
+ */
 namespace Keyboard {
     public:
         /**
@@ -572,7 +576,7 @@ namespace Core {
                 function Show() {}
 
                 /**
-                 * Hides console.
+                 * Sets Position.
                  *
                  * @param arg1  x pos.
                  *
